@@ -59,7 +59,7 @@ A simple application where user can see **NASA articles** with **images**.
 ## 📁 Folder Structure
 
 ```bash
-Weather-App-JS/
+NASA-Images/
 ├── index.html
 ├── style.css
 └── script.js
