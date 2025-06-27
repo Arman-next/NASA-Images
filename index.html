@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA Pictures</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov"
+    />
+    <!-- ZTM Favicon -->
+    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+  </head>
+  <body>
+    <!-- loader -->
+    <div class="loader hidden">
+      <img src="rocket.svg" alt="loading" />
+    </div>
+    <div class="container">
+      <!-- navigation -->
+      <div class="navigation-container">
+        <span class="background"></span>
+        <!-- result nav -->
+        <span class="navigation-items" id="resultNav">
+          <h3
+            class="clickable"
+            id="favSection"
+            onclick="updateDom('favorites')"
+          >
+            Favorites
+          </h3>
+          <h3>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</h3>
+          <h3 class="clickable" onclick="getNasaPicture()">Load More</h3>
+        </span>
+        <!-- faviorites nav -->
+        <span class="navigation-items hidden" id="favioritesNav">
+          <h3 class="clickable" onclick="getNasaPicture()">
+            Load More NASA Images
+          </h3>
+        </span>
+      </div>
+      <!-- image container -->
+      <div class="images-container">
+        <!-- <div class="card">
+          <a href="" title="View full Image" target="_blank">
+            <img
+              src="https://apod.nasa.gov/apod/image/2410/EuropaComet_cooper3.jpg"
+              alt="NASA Picture of the day"
+              class="card-image-top"
+            />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Title of the image</h5>
+            <p class="clickable">Add to Faviorites</p>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              laboriosam aliquam perferendis iste hic, aperiam non iusto porro,
+              doloribus optio cupiditate maiores quas eos aspernatur dignissimos
+              laborum accusantium fugit explicabo. Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Reprehenderit eos non sequi nostrum
+              ut, sit cupiditate perspiciatis veritatis laudantium a numquam
+              distinctio officia aperiam quibusdam explicabo nam hic qui eum?
+            </p>
+            <small class="text-muted">
+              <strong>17-10-2024</strong>
+              <span>Copyright Info</span>
+            </small>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <!-- saved conformation -->
+    <div class="save-confirmed" hidden>
+      <h1>ADDED!</h1>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
